@@ -23,3 +23,7 @@ app.get('/api/todos', async (req, res) => {
         res.json(error.message).status(500)
     }
 })
+
+app.listen(PORT, () => {
+    console.log(`WOrking on ${PORT}`)
+})
